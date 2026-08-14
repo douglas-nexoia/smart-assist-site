@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Assist | O Sistema Operacional da sua Assistência Técnica</title>
+  <meta name="description" content="Atendimento com Inteligência Artificial no WhatsApp, gestão de Ordens de Serviço, agendamento de técnicos, recibos digitais e avaliações 5 estrelas no Google.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">Smart<strong>Assist</strong></span>
+        <span class="badge-tag">powered by IARA</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#como-funciona" class="nav-link">Como Funciona</a>
+        <a href="#simulador" class="nav-link">Simulador IA</a>
+        <a href="#calculadora" class="nav-link">Calculadora de Perda</a>
+        <a href="#planos" class="nav-link">Planos & Preços</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#simulador" class="btn btn-secondary btn-sm">Testar no WhatsApp</a>
+        <a href="#planos" class="btn btn-primary btn-sm">Ver Planos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="section-kicker">AUTOMAÇÃO COMPLETA PARA ASSISTÊNCIAS TÉCNICAS</span>
+        <h1 class="hero-title">
+          Sua assistência técnica no piloto automático: <span class="highlight-text">do primeiro clique à avaliação 5★</span>.
+        </h1>
+        <p class="hero-subtitle">
+          A IA no WhatsApp que atende seus clientes em segundos, qualifica o defeito, cobra a taxa de visita, abre a Ordem de Serviço e encaminha direto para a sua equipe. Sem perder vendas por demora.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulador" class="btn btn-primary btn-lg" id="cta-hero-testar">
+            <span>Experimentar a IARA no WhatsApp</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#video-tour" class="btn btn-outline btn-lg" id="cta-hero-video">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>Ver Demonstração (8 min)</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>&lt; 5s</strong>
+            <span>Tempo de resposta no WhatsApp</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>OS abertas sem erro de digitação</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>+300%</strong>
+            <span>Mais avaliações positivas no Google</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Card -->
+      <div class="hero-media" id="video-tour">
+        <div class="video-frame-wrapper">
+          <div class="video-header">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="video-title-label">Apresentação Oficial Smart Assist / IARA</span>
+          </div>
+          <div class="video-responsive">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/r-ILC5KcYTE?rel=0&modestbranding=1" 
+              title="Demonstração da IARA Assist" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              id="main-video-embed"
+            ></iframe>
+          </div>
+          <div class="video-caption">
+            💡 <em>Vídeo explicativo: veja como o fluxo completo funciona sem intervenção manual.</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Section -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">O GARGALO DA MAIORIA DAS ASSISTÊNCIAS</span>
+        <h2 class="section-title">Por que você perde clientes todos os dias sem perceber?</h2>
+        <p class="section-subtitle">
+          O cliente com a geladeira, máquina de lavar ou celular quebrado não espera. Ele manda mensagem para quem responder primeiro.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <div class="comparison-card card-problem">
+          <div class="card-badge badge-danger">Como a maioria opera (Caos)</div>
+          <ul class="comparison-list">
+            <li>
+              <span class="icon-cross">✕</span>
+              <div>
+                <strong>Demora de 30 min a 2 horas para responder no WhatsApp</strong>
+                <p>O cliente já chamou outro técnico no Google e fechou antes de você responder.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-cross">✕</span>
+              <div>
+                <strong>Atendente anota dados no papel ou bloco de notas</strong>
+                <p>Endereço errado, modelo esquecido, técnico vai ao local sem a peça certa.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-cross">✕</span>
+              <div>
+                <strong>Cliente não sabe o valor da visita e desiste na porta</strong>
+                <p>Técnico perde viagem e combustível por falta de alinhamento prévio.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-cross">✕</span>
+              <div>
+                <strong>Zero avaliações no Google Meu Negócio</strong>
+                <p>O serviço é bem feito, mas ninguém pede avaliação e seu concorrente fica no topo da busca.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="comparison-card card-solution">
+          <div class="card-badge badge-success">Com o Smart Assist (Organização Total)</div>
+          <ul class="comparison-list">
+            <li>
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Atendimento em 3 segundos com a IA IARA</strong>
+                <p>Responde 24 horas por dia, inclusive à noite, sábados e domingos.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Abertura de OS e triagem técnica automática</strong>
+                <p>Coleta marca, modelo, sintoma do defeito e endereço completo com CEP.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Taxa de visita informada e acordada antes</strong>
+                <p>O cliente já sabe as condições e confirma o agendamento no sistema.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Filtro inteligente de NPS e Avaliação 5★ no Google</strong>
+                <p>Clientes felizes recebem o link direto para avaliar no Google. Clientes com queixas são direcionados internamente.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Complete Cycle (Workflow) -->
+  <section class="cycle-section" id="como-funciona">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">FLUXO DE PONTA A PONTA</span>
+        <h2 class="section-title">O Ciclo Completo da Sua Operação</h2>
+        <p class="section-subtitle">
+          Peças soltas perdem energia. Peças integradas criam um negócio sólido e lucrativo.
+        </p>
+      </div>
+
+      <div class="cycle-timeline">
+        <div class="cycle-step" data-step="1">
+          <div class="step-number">01</div>
+          <div class="step-icon">🎯</div>
+          <h3>1. O Anúncio Certo</h3>
+          <p>O cliente pesquisa no Google *"conserto de lava e seca perto de mim"* ou no Instagram e encontra o seu anúncio segmentado.</p>
+        </div>
+
+        <div class="cycle-step" data-step="2">
+          <div class="step-number">02</div>
+          <div class="step-icon">🤖</div>
+          <h3>2. Atendimento IA (IARA)</h3>
+          <p>Ele clica e cai no WhatsApp. A IARA responde na hora, identifica o produto, checa o bairro e passa as regras da visita.</p>
+        </div>
+
+        <div class="cycle-step" data-step="3">
+          <div class="step-number">03</div>
+          <div class="step-icon">📋</div>
+          <h3>3. Abertura de OS</h3>
+          <p>A OS é criada no sistema com todos os dados preenchidos. O atendente recebe uma notificação para agendar a rota do técnico.</p>
+        </div>
+
+        <div class="cycle-step" data-step="4">
+          <div class="step-number">04</div>
+          <div class="step-icon">🔧</div>
+          <h3>4. Painel do Técnico</h3>
+          <p>O técnico visualiza as OS do dia no celular, preenche diagnóstico, adiciona peças e gera o orçamento digital para aprovação do cliente.</p>
+        </div>
+
+        <div class="cycle-step" data-step="5">
+          <div class="step-number">05</div>
+          <div class="step-icon">💰</div>
+          <h3>5. Recibo & ROI</h3>
+          <p>Ao concluir, o cliente recebe o recibo digital. O painel registra exatamente quanto você faturou com aquele cliente vindo do anúncio.</p>
+        </div>
+
+        <div class="cycle-step" data-step="6">
+          <div class="step-number">06</div>
+          <div class="step-icon">⭐</div>
+          <h3>6. Avaliação no Google</h3>
+          <p>Pesquisa de satisfação automática no WhatsApp. Se a nota for 9 ou 10, convida o cliente a avaliar no Google Meu Negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive WhatsApp Simulator -->
+  <section class="simulator-section" id="simulador">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">EXPERIMENTE AO VIVO</span>
+        <h2 class="section-title">Veja como a IARA conversa com seus clientes</h2>
+        <p class="section-subtitle">
+          Clique nos botões de simulação abaixo para ver o comportamento da IA em tempo real.
+        </p>
+      </div>
+
+      <div class="simulator-wrapper">
+        <!-- Phone Frame Mockup -->
+        <div class="phone-mockup">
+          <div class="phone-header">
+            <div class="chat-avatar">🤖</div>
+            <div class="chat-info">
+              <span class="chat-name">IARA Assistente</span>
+              <span class="chat-status"><span class="status-dot"></span> Online agora</span>
+            </div>
+            <div class="chat-menu">⋮</div>
+          </div>
+
+          <div class="chat-messages" id="chat-messages-container">
+            <!-- Messages dynamically generated via JS -->
+          </div>
+
+          <div class="chat-input-area">
+            <input type="text" id="sim-user-input" placeholder="Selecione um cenário ao lado para testar..." readonly>
+            <button class="chat-send-btn" id="sim-send-btn" title="Enviar">➤</button>
+          </div>
+        </div>
+
+        <!-- Simulator Controls -->
+        <div class="simulator-controls">
+          <h3>Testar Cenários Reais:</h3>
+          <p>Veja como a IARA conduz a conversa até o fechamento:</p>
+
+          <div class="scenario-buttons">
+            <button class="btn-scenario active" data-scenario="geladeira">
+              <span class="scenario-tag">Cenário 1</span>
+              <strong>"Minha geladeira parou de gelar"</strong>
+              <span>Triagem de defeito + Coleta de CEP + Taxa de visita</span>
+            </button>
+
+            <button class="btn-scenario" data-scenario="maquina">
+              <span class="scenario-tag">Cenário 2</span>
+              <strong>"Máquina de lavar fazendo barulho"</strong>
+              <span>Identificação de modelo + Abertura de OS automática</span>
+            </button>
+
+            <button class="btn-scenario" data-scenario="nps">
+              <span class="scenario-tag">Cenário 3</span>
+              <strong>Pós-Atendimento & Avaliação 5★</strong>
+              <span>Pesquisa de satisfação + Encaminhamento para o Google</span>
+            </button>
+          </div>
+
+          <div class="simulator-cta-box">
+            <h4>Quer esse robô atendendo o seu WhatsApp hoje?</h4>
+            <p>Ativação rápida em menos de 24 horas na sua linha atual.</p>
+            <a href="#planos" class="btn btn-primary btn-block">Escolher Plano & Ativar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI / Loss Calculator -->
+  <section class="calculator-section" id="calculadora">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-header">
+          <span class="section-kicker">CALCULADORA DE PERDAS</span>
+          <h2 class="section-title">Quanto dinheiro sua assistência deixa na mesa todo mês?</h2>
+          <p>Ajuste os valores abaixo com a realidade da sua empresa:</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-controls">
+            <div class="calc-field">
+              <label for="range-leads">
+                <span>Mensagens recebidas por mês no WhatsApp:</span>
+                <strong id="val-leads">60 clientes</strong>
+              </label>
+              <input type="range" id="range-leads" min="20" max="300" step="10" value="60">
+            </div>
+
+            <div class="calc-field">
+              <label for="range-ticket">
+                <span>Ticket Médio por reparo/serviço:</span>
+                <strong id="val-ticket">R$ 380</strong>
+              </label>
+              <input type="range" id="range-ticket" min="150" max="1200" step="10" value="380">
+            </div>
+
+            <div class="calc-field">
+              <label for="range-loss-rate">
+                <span>Taxa estimada de desistência por demora no atendimento:</span>
+                <strong id="val-loss-rate">25% (média do setor)</strong>
+              </label>
+              <input type="range" id="range-loss-rate" min="10" max="50" step="5" value="25">
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <div class="result-box danger">
+              <span class="result-label">Receita perdida todo mês por falta de agilidade:</span>
+              <span class="result-number" id="result-lost-monthly">R$ 5.700,00</span>
+              <span class="result-subtext">em serviços que foram para o concorrente</span>
+            </div>
+
+            <div class="result-box success">
+              <span class="result-label">Investimento no Smart Assist:</span>
+              <span class="result-number">R$ 397,00<small>/mês</small></span>
+              <span class="result-subtext">Você recupera o valor do software com apenas <strong>1 serviço extra</strong> recuperado no mês.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section class="pricing-section" id="planos">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">TRANSPARÊNCIA TOTAL</span>
+        <h2 class="section-title">Planos Simples, Sem Letras Miúdas</h2>
+        <p class="section-subtitle">
+          Sem taxas ocultas, sem contrato de fidelidade e sem precisar agendar reuniões chatas. Escolha e comece.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1: SaaS Puro -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-name">IARA Assist</span>
+            <span class="plan-badge">SaaS Essencial</span>
+            <p class="plan-desc">Ideal para quem já tem demanda e quer organizar o atendimento e as ordens de serviço.</p>
+          </div>
+
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">397</span>
+            <span class="period">/mês</span>
+          </div>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> <strong>IA IARA no WhatsApp</strong> (Atendimento 24/7)</li>
+            <li><span class="check">✓</span> <strong>Abertura Automática de OS</strong> no sistema</li>
+            <li><span class="check">✓</span> <strong>Painel Web & Mobile</strong> para os técnicos</li>
+            <li><span class="check">✓</span> <strong>Orçamentos e Recibos Digitais</strong> via link/PDF</li>
+            <li><span class="check">✓</span> <strong>Pesquisa de Satisfação NPS</strong> automática</li>
+            <li><span class="check">✓</span> <strong>Filtro de Avaliação 5★</strong> no Google</li>
+            <li><span class="check">✓</span> <strong>Controle Financeiro</strong> de serviços concluídos</li>
+            <li><span class="check">✓</span> Suporte técnico direto via WhatsApp</li>
+          </ul>
+
+          <div class="plan-footer">
+            <a href="https://wa.me/5579999999999?text=Ol%C3%A1%2C%20quero%20assinar%20o%20plano%20IARA%20Assist%20de%20R%24%20397%2Fm%C3%AAs" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
+              Assinar IARA Assist
+            </a>
+            <span class="guarantee-text">🔒 Sem carência. Cancele quando quiser.</span>
+          </div>
+        </div>
+
+        <!-- Plan 2: Smart Assist (Featured) -->
+        <div class="pricing-card featured">
+          <div class="featured-ribbon">MAIS RECOMENDADO</div>
+          <div class="plan-header">
+            <span class="plan-name">Smart Assist</span>
+            <span class="plan-badge featured-badge">Automação Completa</span>
+            <p class="plan-desc">A solução completa: software de atendimento + robô de presença no Google + página web.</p>
+          </div>
+
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">697</span>
+            <span class="period">/mês</span>
+          </div>
+
+          <ul class="plan-features">
+            <li class="highlight-feature"><span class="check">✓</span> <strong>TUDO do plano IARA Assist</strong></li>
+            <li><span class="check">✓</span> <strong>Robô do Google Meu Negócio</strong> (GMN Engine)</li>
+            <li><span class="check">✓</span> <strong>Postagens semanais automáticas</strong> de SEO local</li>
+            <li><span class="check">✓</span> <strong>Resposta automática com IA</strong> a todas as avaliações</li>
+            <li><span class="check">✓</span> <strong>Landing Page Pronta de Alta Conversão</strong></li>
+            <li><span class="check">✓</span> <strong>Monitoramento de Ranking</strong> no Google da sua cidade</li>
+            <li><span class="check">✓</span> <strong>Prioridade de Suporte</strong> e Onboarding guiado</li>
+          </ul>
+
+          <div class="plan-footer">
+            <a href="https://wa.me/5579999999999?text=Ol%C3%A1%2C%20quero%20assinar%20o%20plano%20Smart%20Assist%20de%20R%24%20697%2Fm%C3%AAs" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+              Assinar Smart Assist Completo
+            </a>
+            <span class="guarantee-text">🔒 Ativação assistida em menos de 24 horas.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Real Case -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="testimonial-card">
+        <div class="quote-mark">“</div>
+        <blockquote class="testimonial-quote">
+          Eu não me imagino hoje sem a IARA. Antes eu tinha um sistema apenas para gerar ordem de serviço e ficava louco respondendo mensagem no WhatsApp misturado com coisa pessoal. Hoje o cliente entra, é triado, a taxa de visita já é avisada e o técnico recebe a rota pronta. Mudou a operação da minha assistência.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨‍🔧</div>
+          <div class="author-info">
+            <strong>Dono de Assistência Técnica de Eletrodomésticos</strong>
+            <span>Cliente IARA Assist ativo há mais de 1 ano</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authority / About Douglas -->
+  <section class="about-section" id="sobre">
+    <div class="container about-container">
+      <div class="about-badge-col">
+        <div class="experience-card">
+          <span class="exp-number">20+</span>
+          <span class="exp-text">Anos de experiência no setor de refrigeração e serviços</span>
+        </div>
+        <div class="roles-tags">
+          <span>Ex-Instrutor SENAI</span>
+          <span>Treinador Técnico Electrolux</span>
+          <span>Ex-Dono de Assistência</span>
+          <span>Desenvolvedor do Sistema</span>
+        </div>
+      </div>
+
+      <div class="about-content-col">
+        <span class="section-kicker">CRIADO POR QUEM CONHECE A SUA REALIDADE</span>
+        <h2 class="section-title">Não foi feito por programadores de escritório. Foi feito por quem viveu a oficina.</h2>
+        <p>
+          O Smart Assist não nasceu de uma ideia teórica. Nasceu após <strong>20 anos percorrendo o Brasil formando assistências técnicas autorizadas</strong>, gerenciando equipes técnicas no SENAI e assumindo operações reais de assistência que precisavam de organização urgente.
+        </p>
+        <p>
+          Eu sei exatamente a dor de técnico chegando no local errado, cliente reclamando de demora no WhatsApp e a dificuldade de fazer a empresa lucrar no final do mês. Esse sistema é a síntese de duas décadas de prática em uma única ferramenta.
+        </p>
+        <div class="about-signature">
+          <strong>Douglas</strong>
+          <span>Fundador & Integrador de Sistemas Smart Assist</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-kicker">DÚVIDAS FREQUENTES</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Preciso trocar o número do meu WhatsApp atual?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não! A IARA se conecta diretamente ao seu número de WhatsApp atual (seja ele WhatsApp Business ou normal) através de QR Code, da mesma forma que você conecta o WhatsApp Web no computador.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>E se o cliente quiser falar com uma pessoa humana?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>A IARA é programada para identificar quando o cliente precisa de intervenção humana ou quando a triagem termina. Ela notifica o atendente e pausa as respostas automáticas para aquele cliente específico para você assumir tranquilamente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como os meus técnicos usam o sistema na rua?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Os técnicos recebem acesso a um painel simples e leve direto no navegador do celular (ou aplicativo PWA). Lá eles veem a lista de chamados do dia, endereço com botão de GPS, telefone do cliente e campo para preencher o laudo e peças.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Existe contrato de fidelidade ou multa de cancelamento?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Nenhuma fidelidade. A mensalidade é pré-paga mês a mês. Se por qualquer motivo você não quiser continuar, basta solicitar o cancelamento antes da próxima fatura.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quanto tempo leva para colocar para rodar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>A ativação básica com conexão do WhatsApp e configuração das regras da sua assistência (bairros atendidos, valores de visita e produtos) é feita em até 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta-section">
+    <div class="container text-center">
+      <h2>Pronto para parar de perder clientes por demora no WhatsApp?</h2>
+      <p>Ative a IARA hoje mesmo e veja sua assistência funcionando no piloto automático.</p>
+      <div class="cta-buttons-center">
+        <a href="#simulador" class="btn btn-primary btn-lg">Experimentar no WhatsApp</a>
+        <a href="#planos" class="btn btn-outline-white btn-lg">Ver Planos e Preços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">⚡</div>
+          <span class="logo-text">Smart<strong>Assist</strong></span>
+        </div>
+        <p>O sistema operacional completo para assistências técnicas e empresas de serviço.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Início</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#planos">Planos</a>
+        <a href="#sobre">Sobre o Douglas</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Assist. Todos os direitos reservados. Smart Assist e Iara Assist são tecnologias desenvolvidas e operadas por Nexo IA.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
