@@ -1408,6 +1408,139 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
+   Visual Media Enhancements (Hero Mockup, Tech Banner, 3D Diagram)
+   ========================================================================== */
+.hero-media-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-mockup-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  transition: var(--transition);
+}
+
+.hero-mockup-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 16px 48px rgba(16, 185, 129, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero-mockup-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.mockup-caption {
+  padding: 12px 16px;
+  background: rgba(15, 23, 42, 0.85);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Field Technician Visual Banner */
+.tech-banner-wrapper {
+  margin: 32px 0 48px;
+}
+
+.tech-banner-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.tech-banner-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+}
+
+.tech-banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 28px 24px;
+  background: linear-gradient(180deg, transparent 0%, rgba(9, 14, 23, 0.92) 50%, rgba(9, 14, 23, 0.98) 100%);
+  color: var(--text-primary);
+}
+
+.tech-tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.tech-banner-overlay h3 {
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.tech-banner-overlay p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0;
+}
+
+/* 3D Cycle Diagram */
+.cycle-diagram-wrapper {
+  margin: 32px 0 48px;
+}
+
+.diagram-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+}
+
+.diagram-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2);
+}
+
+.cycle-diagram-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.diagram-caption {
+  padding: 14px 20px;
+  background: rgba(15, 23, 42, 0.9);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 992px) {
